@@ -33,7 +33,8 @@ again for `PV`. The FLOPs are not the problem. The traffic is: attention is memo
   kernel; the N×N matrix never exists in HBM.
 - **Online softmax:** keep a running max `m` and running sum `l` per row. When a new tile raises the
   max, rescale the old sum and the old output by `exp(m_old − m_new)`. Divide by `l` at the end.
-- Memory O(N²) → O(N). The backward pass saves one number per row (logsumexp) and recomputes S.
+- Memory O(N²) → O(N). The backward pass saves the per-row softmax statistics (`m` and `l`) and
+  recomputes S. (Saving a single logsumexp per row is an FA2 change.)
 - Same FLOPs, much less HBM traffic ("IO-aware"). Exact, not approximate.
 
 ## FA2: why the outer loop is over Q
