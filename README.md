@@ -10,7 +10,7 @@ How does a mathematical operation become a fast training system? These notes fol
 
 | Goal | Suggested path |
 |---|---|
-| Build an intuition for attention | Soft database lookup → FlashAttention → ring attention |
+| Build an intuition for attention | Soft database lookup → FlashAttention overview → FA1 / FA2 / FA3 deep dives → ring attention |
 | Understand distributed training | MoE → TP/SP/CP → gradient and parameter communication |
 | Reason about performance | Five principles → attention cycle model → measurement case studies |
 
@@ -23,6 +23,10 @@ For CUDA indexing and synchronization, begin with the companion [GPU Kernel Lab]
 | Which ideas keep recurring in performance work? | [Five principles](notes/00-principles.md) |
 | Why cache K and V, but not Q? | [Attention as a soft database lookup](notes/attention-as-a-soft-database-lookup.md) |
 | Why do attention kernels change across GPU generations? | [FlashAttention 1–4](notes/02-flashattention-1-to-4.md) |
+| Why is attention memory-bound, and how do tiling and online softmax fix it? | [FlashAttention-1](notes/flashattention/01-flashattention-1.md) |
+| Why does FA2 put Q in the outer loop, and what else makes it ~2× faster? | [FlashAttention-2](notes/flashattention/02-flashattention-2.md) |
+| How does FA3 use Hopper's asynchronous hardware to hide softmax? | [FlashAttention-3](notes/flashattention/03-flashattention-3.md) |
+| How does FA4 handle the exponential bottleneck on Blackwell? | [FlashAttention-4](notes/flashattention/04-flashattention-4.md) (in progress) |
 | How do uneven expert workloads become grouped GEMMs? | [MoE, grouped GEMM, and expert parallelism](notes/03-moe-grouped-gemm-and-expert-parallelism.md) |
 | Why does context parallelism move K/V? | [TP, SP, CP, and ring attention](notes/04-tp-sp-cp-and-ring-attention.md) |
 | What actually communicates during training? | [Distributed training communication](notes/05-distributed-training-communication.md) |

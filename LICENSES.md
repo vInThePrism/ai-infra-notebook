@@ -12,6 +12,11 @@ Original copyright and license notices are preserved in `licenses/`. Code retain
 | `interview-prep/worksheet-prompt.md` | `ai-infra-notebook: interview-prep/worksheet-prompt.md` | CC BY 4.0 |
 | `notes/00-principles.md` | `ai-infra-notebook: notes/00-principles.md` | CC BY 4.0 |
 | `notes/02-flashattention-1-to-4.md` | `ai-infra-notebook: notes/02-flashattention-1-to-4.md` | CC BY 4.0 |
+| `notes/flashattention/01-flashattention-1.md` | `new note: Jin Cheng (vInThePrism)` | CC BY 4.0 |
+| `notes/flashattention/02-flashattention-2.md` | `new note: Jin Cheng (vInThePrism)` | CC BY 4.0 |
+| `notes/flashattention/03-flashattention-3.md` | `new note: Jin Cheng (vInThePrism)` | CC BY 4.0 |
+| `notes/flashattention/04-flashattention-4.md` | `new note: Jin Cheng (vInThePrism)` | CC BY 4.0 |
+| `notes/flashattention/images/*.png` | `new figures: Jin Cheng (vInThePrism)` | CC BY 4.0 |
 | `notes/03-moe-grouped-gemm-and-expert-parallelism.md` | `ai-infra-notebook: notes/03-moe-grouped-gemm-and-expert-parallelism.md` | CC BY 4.0 |
 | `notes/04-tp-sp-cp-and-ring-attention.md` | `ai-infra-notebook: notes/04-tp-sp-cp-and-ring-attention.md` | CC BY 4.0 |
 | `notes/05-distributed-training-communication.md` | `ai-infra-notebook: notes/05-distributed-training-communication.md` | CC BY 4.0 |
