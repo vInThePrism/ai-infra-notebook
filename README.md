@@ -12,7 +12,7 @@ How does a mathematical operation become a fast training system? These notes fol
 |---|---|
 | Build an intuition for attention | Soft database lookup → FlashAttention overview → FA1 / FA2 / FA3 deep dives → ring attention |
 | Understand distributed training | MoE → TP/SP/CP → gradient and parameter communication |
-| Reason about performance | Five principles → attention cycle model → measurement case studies |
+| Reason about performance | Five principles → optimization methodology → attention cycle model → measurement case studies |
 
 For CUDA indexing and synchronization, begin with the companion [GPU Kernel Lab](https://github.com/vInThePrism/gpu-kernel-lab).
 
@@ -21,6 +21,7 @@ For CUDA indexing and synchronization, begin with the companion [GPU Kernel Lab]
 | Question | Note |
 |---|---|
 | Which ideas keep recurring in performance work? | [Five principles](notes/00-principles.md) |
+| How do you derive a performance design from first principles? | [Optimization methodology](notes/01-first-principles-optimization-methodology.md) |
 | Why cache K and V, but not Q? | [Attention as a soft database lookup](notes/attention-as-a-soft-database-lookup.md) |
 | Why do attention kernels change across GPU generations? | [FlashAttention 1–4](notes/02-flashattention-1-to-4.md) |
 | Why is attention memory-bound, and how do tiling and online softmax fix it? | [FlashAttention-1](notes/flashattention/01-flashattention-1.md) |

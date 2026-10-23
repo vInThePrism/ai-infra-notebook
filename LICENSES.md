@@ -11,6 +11,7 @@ Original copyright and license notices are preserved in `licenses/`. Code retain
 | `interview-prep/question-bank.md` | `ai-infra-notebook: interview-prep/question-bank.md` | CC BY 4.0 |
 | `interview-prep/worksheet-prompt.md` | `ai-infra-notebook: interview-prep/worksheet-prompt.md` | CC BY 4.0 |
 | `notes/00-principles.md` | `ai-infra-notebook: notes/00-principles.md` | CC BY 4.0 |
+| `notes/01-first-principles-optimization-methodology.md` | `new note: Jin Cheng (vInThePrism)`; short code excerpts from [deepseek-ai/DeepEP](https://github.com/deepseek-ai/DeepEP) @ `f6aa38f` (MIT) | CC BY 4.0 (prose); excerpts MIT |
 | `notes/02-flashattention-1-to-4.md` | `ai-infra-notebook: notes/02-flashattention-1-to-4.md` | CC BY 4.0 |
 | `notes/flashattention/01-flashattention-1.md` | `new note: Jin Cheng (vInThePrism)` | CC BY 4.0 |
 | `notes/flashattention/02-flashattention-2.md` | `new note: Jin Cheng (vInThePrism)` | CC BY 4.0 |
